@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Math · Grade 2 · Q1 Week 5 · Assignment</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Nunito','Century Gothic','Arial Rounded MT Bold',Verdana,sans-serif;background:#F2F0E8 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");color:#2B1D12;line-height:1.6;-webkit-font-smoothing:antialiased}
+.page-wrap{max-width:920px;margin:0 auto;background:#FAF8F4;box-shadow:0 0 40px rgba(0,0,0,0.07);position:relative;overflow:visible}
+.page-wrap::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;background-image:radial-gradient(circle at 8% 25%,rgba(255,152,0,0.06) 0%,transparent 60px),radial-gradient(circle at 92% 18%,rgba(156,39,176,0.05) 0%,transparent 50px),radial-gradient(circle at 15% 70%,rgba(76,175,80,0.05) 0%,transparent 55px),radial-gradient(circle at 88% 65%,rgba(33,150,243,0.05) 0%,transparent 60px),radial-gradient(circle at 50% 45%,rgba(244,67,54,0.03) 0%,transparent 80px)}
+.page-wrap>*{position:relative;z-index:1}
+.header{background:linear-gradient(135deg,#0E1C42 0%,#1A2D5A 60%,#243868 100%);border-bottom:6px solid #0288D1;padding:22px 28px 24px;position:relative;overflow:hidden;z-index:1}
+.header::after{content:'';position:absolute;bottom:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#FF7043,#FFB74D,#FFF176,#81C784,#4DD0E1,#7986CB,#CE93D8)}
+.header::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;pointer-events:none;background-image:radial-gradient(circle at 85% 20%,rgba(255,183,77,0.12) 0%,transparent 40px),radial-gradient(circle at 75% 75%,rgba(77,208,225,0.1) 0%,transparent 35px),radial-gradient(circle at 95% 55%,rgba(206,147,216,0.1) 0%,transparent 30px)}
+.header-brand{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.header-logo{width:52px;height:52px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.15)}
+.header-logo img{width:48px;height:38px}
+.header-org{font-size:22px;color:#fff;font-weight:800;line-height:1.15}
+.header-sub{font-size:11px;color:#55C8E8;letter-spacing:0.5px}
+.header-title{font-size:28px;color:#fff;font-weight:900;line-height:1.15;margin-bottom:6px;text-shadow:0 2px 12px rgba(2,136,209,0.3)}
+.header-week{font-size:15px;color:#A8D0E6;font-weight:600}
+.content{padding:24px 28px 36px}
+.art-divider{display:flex;align-items:center;justify-content:center;gap:8px;padding:10px 0 18px;font-size:22px;opacity:0.6}
+@keyframes emoji-bounce{0%{transform:scale(1) rotate(0deg)}30%{transform:scale(1.25) rotate(-8deg)}60%{transform:scale(1.1) rotate(6deg)}100%{transform:scale(1) rotate(0deg)}}
+.bounce-emoji{display:inline-block;transition:transform 0.1s;cursor:default}
+.bounce-emoji:hover{animation:emoji-bounce 0.5s ease}
+.footer{background:#0E1C42;color:rgba(255,255,255,0.5);text-align:center;padding:16px;font-size:12px;font-weight:600}
+.paint-border{position:relative;z-index:1;height:8px;background:linear-gradient(90deg,#FF7043 0%,#FF7043 12.5%,#FFB74D 12.5%,#FFB74D 25%,#FFF176 25%,#FFF176 37.5%,#81C784 37.5%,#81C784 50%,#4DD0E1 50%,#4DD0E1 62.5%,#7986CB 62.5%,#7986CB 75%,#CE93D8 75%,#CE93D8 87.5%,#F48FB1 87.5%,#F48FB1 100%)}
+.rainbow-frame{padding:4px;background:linear-gradient(90deg,#FF7043,#FFB74D,#FFF176,#81C784,#4DD0E1,#7986CB,#CE93D8,#F48FB1);border-radius:14px;display:block;width:100%;box-sizing:border-box;margin-bottom:22px}
+.rainbow-frame img{display:block;width:100%;border-radius:11px}
+/* Game widget */
+.gw{background:#fff;border:2px solid #A5D6A7;border-radius:18px;margin-bottom:22px;overflow:hidden;box-shadow:0 2px 12px rgba(27,67,50,0.06)}
+.gh{background:linear-gradient(135deg,#E8F5E9,#C8E6C9);border-bottom:2px solid #A5D6A7;padding:14px 20px;display:flex;align-items:center;gap:10px}
+.gh-ico{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#2E7D32,#43A047);color:#fff;font-size:22px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.gh-lbl{font-size:10px;color:#9A8E82;text-transform:uppercase;letter-spacing:.8px;font-weight:700}
+.gh-ttl{font-size:19px;color:#1B4332;font-weight:800;line-height:1.2}
+.gb{padding:20px 24px}
+.gi{font-size:16px;color:#5A4D3E;text-align:center;margin-bottom:16px;line-height:1.6}
+.gwin{display:none;text-align:center;padding:16px 10px;background:linear-gradient(135deg,#E8F5E9,#C8E6C9);border-radius:14px;margin-top:14px}
+.gwin.show{display:block;animation:gpop .4s ease}
+.gwin-h{font-size:22px;font-weight:800;color:#1B4332;margin-bottom:4px}
+.gwin-s{font-size:15px;color:#2D6A4F}
+@keyframes gpop{0%{transform:scale(.85);opacity:.5}100%{transform:scale(1);opacity:1}}
+@keyframes gshake{0%{transform:translateX(0)}20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}100%{transform:translateX(0)}}
+/* Game-specific */
+.round-display{text-align:center;margin-bottom:20px}
+.big-number{font-size:72px;font-weight:900;color:#0E1C42;line-height:1;margin-bottom:8px}
+.round-label{font-size:13px;color:#9A8E82;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px}
+.expanded-row{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap;margin:20px 0}
+.exp-box{display:flex;flex-direction:column;align-items:center;gap:6px}
+.exp-label{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#5A4D3E}
+.exp-input{width:80px;height:60px;border-radius:14px;border:3px solid #E8DDD2;font-size:22px;font-weight:800;text-align:center;color:#0E1C42;background:#FAFAF6;transition:border-color 0.2s,background 0.2s;outline:none;font-family:inherit}
+.exp-input:focus{border-color:#0288D1;background:#E1F5FE}
+.exp-input.correct{border-color:#43A047;background:#E8F5E9;color:#1B4332}
+.exp-input.wrong{border-color:#E53935;background:#FFEBEE;animation:gshake 0.4s ease}
+.eq-sym{font-size:28px;font-weight:900;color:#9A8E82;padding-top:24px}
+.eq-result{font-size:28px;font-weight:900;color:#0E1C42;padding-top:24px}
+.check-btn{display:block;margin:0 auto;padding:12px 36px;background:linear-gradient(135deg,#0277BD,#0288D1);color:#fff;border:none;border-radius:30px;font-size:18px;font-weight:800;cursor:pointer;font-family:inherit;transition:transform 0.15s,box-shadow 0.15s;box-shadow:0 4px 14px rgba(2,136,209,0.3)}
+.check-btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(2,136,209,0.4)}
+.check-btn:active{transform:translateY(0)}
+.feedback{text-align:center;font-size:16px;font-weight:700;min-height:24px;margin-top:12px}
+.hint-box{display:none;margin:10px auto 0;max-width:480px;padding:12px 16px;background:linear-gradient(135deg,#FFF8E1,#FFECB3);border:2px solid #FFD54F;border-radius:14px;font-size:15px;font-weight:700;color:#5A4D3E;text-align:center}
+.hint-box.show{display:block}
+.score-bar{display:flex;justify-content:center;gap:8px;margin-bottom:18px}
+.score-dot{width:18px;height:18px;border-radius:50%;background:#E8DDD2;transition:background 0.3s}
+.score-dot.got{background:#43A047}
+</style>
+</head>
+<body>
+<div class="page-wrap">
+  <div class="paint-border"></div>
+
+  <div class="header">
+    <div class="header-brand">
+      <div class="header-logo">
+        <img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" />
+      </div>
+      <div>
+        <div class="header-org">Optima Academy Online</div>
+        <div class="header-sub">Mathematics · Grade 2</div>
+      </div>
+    </div>
+    <div class="header-title">Full Place Value Review — Expanded Form, Comparing, Counting</div>
+    <div class="header-week">Q1 · Week 5 · Quiz Week · Assignment</div>
+  </div>
+
+  <div class="content">
+    <div class="art-divider">
+      <span class="bounce-emoji">➕</span>
+      <span class="bounce-emoji">➖</span>
+      <span class="bounce-emoji">🔢</span>
+      <span class="bounce-emoji">💯</span>
+      <span class="bounce-emoji">🧮</span>
+      <span class="bounce-emoji">✏️</span>
+      <span class="bounce-emoji">🌟</span>
+    </div>
+
+    <div class="rainbow-frame">
+      <img src="lesson-images/Q1 W5 Overview &amp; Assignment.png" alt="Q1 Week 5 Overview and Assignment" />
+    </div>
+
+    <!-- GAME WIDGET -->
+    <div class="gw">
+      <div class="gh">
+        <div class="gh-ico">📊</div>
+        <div>
+          <div class="gh-lbl">Interactive Practice</div>
+          <div class="gh-ttl">Expanded Form Explorer</div>
+        </div>
+      </div>
+      <div class="gb">
+        <div class="gi">Break each number into its parts! Type the <strong>hundreds value</strong>, <strong>tens value</strong>, and <strong>ones value</strong>.</div>
+
+        <div class="score-bar" id="scoreDots">
+          <div class="score-dot" id="d0"></div>
+          <div class="score-dot" id="d1"></div>
+          <div class="score-dot" id="d2"></div>
+          <div class="score-dot" id="d3"></div>
+          <div class="score-dot" id="d4"></div>
+        </div>
+
+        <div class="round-display">
+          <div class="round-label" id="roundLabel">Round 1 of 5</div>
+          <div class="big-number" id="bigNum">347</div>
+        </div>
+
+        <div class="expanded-row">
+          <div class="exp-box">
+            <div class="exp-label">Hundreds Value</div>
+            <input class="exp-input" id="inH" type="number" min="0" max="900" step="100" placeholder="___" />
+          </div>
+          <div class="eq-sym">+</div>
+          <div class="exp-box">
+            <div class="exp-label">Tens Value</div>
+            <input class="exp-input" id="inT" type="number" min="0" max="90" step="10" placeholder="___" />
+          </div>
+          <div class="eq-sym">+</div>
+          <div class="exp-box">
+            <div class="exp-label">Ones Value</div>
+            <input class="exp-input" id="inO" type="number" min="0" max="9" placeholder="___" />
+          </div>
+          <div class="eq-sym">=</div>
+          <div class="eq-result" id="eqResult">?</div>
+        </div>
+
+        <button class="check-btn" id="checkBtn" onclick="checkAnswer()">Check! ✓</button>
+        <div class="feedback" id="feedback"></div>
+        <div class="hint-box" id="hintBox"></div>
+
+        <div class="gwin" id="winBox">
+          <div class="gwin-h" id="winH">🎉 Expanded Form Expert! 🎉</div>
+          <div class="gwin-s" id="winS">You finished all 5 rounds!</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="paint-border"></div>
+  <div class="footer">© Optima Academy Online · Mathematics Grade 2 · Q1 Week 5</div>
+</div>
+
+<script>
+const rounds = [
+  {num:347, h:300, t:40, o:7},
+  {num:512, h:500, t:10, o:2},
+  {num:824, h:800, t:20, o:4},
+  {num:163, h:100, t:60, o:3},
+  {num:490, h:400, t:90, o:0}
+];
+let current = 0;
+let score = 0;
+let attempts = 0;
+
+function loadRound() {
+  const r = rounds[current];
+  document.getElementById('roundLabel').textContent = 'Round ' + (current+1) + ' of 5';
+  document.getElementById('bigNum').textContent = r.num;
+  document.getElementById('eqResult').textContent = r.num;
+  ['inH','inT','inO'].forEach(id => {
+    const el = document.getElementById(id);
+    el.value = '';
+    el.classList.remove('correct','wrong');
+    el.removeAttribute('disabled');
+  });
+  document.getElementById('feedback').textContent = '';
+  document.getElementById('hintBox').classList.remove('show');
+  document.getElementById('checkBtn').style.display = 'block';
+  attempts = 0;
+}
+
+function checkAnswer() {
+  const r = rounds[current];
+  const hVal = parseInt(document.getElementById('inH').value) || 0;
+  const tVal = parseInt(document.getElementById('inT').value) || 0;
+  const oVal = parseInt(document.getElementById('inO').value) || 0;
+
+  let allCorrect = true;
+  const pairs = [['inH', r.h, hVal], ['inT', r.t, tVal], ['inO', r.o, oVal]];
+  pairs.forEach(([id, correct, entered]) => {
+    const el = document.getElementById(id);
+    el.classList.remove('correct','wrong');
+    if (entered === correct) {
+      el.classList.add('correct');
+    } else {
+      el.classList.add('wrong');
+      allCorrect = false;
+    }
+  });
+
+  attempts++;
+
+  if (allCorrect) {
+    score++;
+    document.getElementById('d' + current).classList.add('got');
+    document.getElementById('feedback').innerHTML = '&#10004; Yes! ' + r.num + ' = ' + r.h + ' + ' + r.t + ' + ' + r.o + '!';
+    document.getElementById('feedback').style.color = '#2E7D32';
+    document.getElementById('hintBox').classList.remove('show');
+    document.getElementById('checkBtn').style.display = 'none';
+    ['inH','inT','inO'].forEach(id => document.getElementById(id).setAttribute('disabled',''));
+
+    setTimeout(() => {
+      current++;
+      if (current < rounds.length) {
+        loadRound();
+      } else {
+        showWin();
+      }
+    }, 1800);
+  } else {
+    document.getElementById('feedback').innerHTML = 'Not quite — check the values and try again!';
+    document.getElementById('feedback').style.color = '#C62828';
+    if (attempts >= 1) {
+      const r = rounds[current];
+      const hDigit = Math.floor(r.num / 100);
+      document.getElementById('hintBox').innerHTML = 'Hint: the hundreds digit is <strong>' + hDigit + '</strong>, so hundreds value = <strong>' + r.h + '</strong>';
+      document.getElementById('hintBox').classList.add('show');
+    }
+  }
+}
+
+function showWin() {
+  document.getElementById('checkBtn').style.display = 'none';
+  document.getElementById('winH').textContent = score === 5 ? '🎉 Perfect Score! 🎉' : '🌟 Great Work! 🌟';
+  document.getElementById('winS').textContent = 'You got ' + score + ' out of 5! You are an Expanded Form Explorer!';
+  document.getElementById('winBox').classList.add('show');
+}
+
+['inH','inT','inO'].forEach(id => {
+  document.getElementById(id).addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') checkAnswer();
+  });
+});
+
+loadRound();
+</script>
+</body>
+</html>
